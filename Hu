@@ -1,2 +1,22 @@
-import numpy as np
+import numpy
 import matplotlib.pyplot as plt
+import sklearn
+
+dataset = np.array(
+[['Asset Flip', 100, 1000],
+['Text base', 500, 3000],
+['Visual novel', 1500, 5000],
+['2D Pixel Art', 3500, 8000],
+['2D Vector Art', 500, 6500],
+['Strategy', 6000, 7000],
+['first Person Shooter', 8000, 15000],
+['Simulator', 9500, 20000],
+['Racing', 12000, 21000],
+['RPG', 14000, 25000],
+['Sanbox',15500, 27000],
+['Open-World', 16500, 30000],
+['MMOFPS',25000, 52000],
+['MMORPG',30000, 80000]
+])
+
+X = dataset[:,1:2].astype(int)
